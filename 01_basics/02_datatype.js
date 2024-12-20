@@ -18,3 +18,5 @@ let isLoggedIN = false
 //object
 
 console.log(typeof "hitesh");
+console.log(typeof null)//null
+console.log(undefined)//undefined
