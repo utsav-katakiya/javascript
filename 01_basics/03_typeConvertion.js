@@ -38,3 +38,8 @@ console.table([ID,name,pass])
     let stringNumber = String(someNumber)
     console.log(stringNumber)
     console.log(typeof stringNumber)
+
+    console.log(1 + "2") //12 string
+    console.log( "1" + 2) //12 string
+    console.log("1" + 2 + 2) //122 string
+    console.log(1 + 2  + "2") //32 string
