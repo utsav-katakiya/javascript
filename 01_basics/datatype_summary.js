@@ -26,3 +26,25 @@ const Myfunction = function(){
     console.log("utsav")
 }
 Myfunction();
+
+
+// --------------------------------------------------------------------------------------------------
+
+// Stack(Primitve)    ,    heap(non- primitive)
+
+let myname= "sneh"
+let anotherName = myname
+anotherName = "utsav"
+console.log(anotherName)
+console.log(myname)
+
+let user ={
+     email : "utsav@gmail.com",
+     upi : "utsav@hdfc"
+}
+
+let userTwo = user
+userTwo.email = "sneh@gmail.com"
+
+console.log(user.email)
+console.log(userTwo.email)
