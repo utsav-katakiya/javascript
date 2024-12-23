@@ -57,4 +57,5 @@ console.log(courseInstructor);
 
 
 let {courseInstructor : Instructor} = course
-console.log(Instructor)
+console.log(Instructor)  
+
