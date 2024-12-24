@@ -26,3 +26,20 @@
 //     // console.log(username)
 // }
 // one()
+
+function addone (num1){
+    return num1 + 1
+}
+
+// console.log( addone(5));
+addone(5)
+
+
+let addtwo = function(num2){
+    return num2 +2
+}
+
+// console.log(addtwo(5));
+addtwo(5)
+
+
