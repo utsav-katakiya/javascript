@@ -31,22 +31,26 @@
 // console.log( Userloggedin("utsav"))
 
 
-// function cartprice(value1 ,value2,...num1){
-//      return num1
-// }
+// // function cartprice(value1 ,value2,...num1){
+// //      return num1
+// // }
+ 
+// // console.log(cartprice(100,200,300,400,500,600))
 
-// console.log(cartprice(100,200,300,400,500,600))
+let user = {
+    price : 100,
+    name : "utsav"
+}
 
-// let user = {
-//     price : 100,
-//     name : "utsav"
-// }
+function handleobject(anyobject){
+     console.log('username ${anyobject.name} and prize ${anyobject.price}');
+    return
+}
+handleobject({
+    name : "utsav",
+    price : 100
+ })
 
-// function handleobject(anyobject){
-//      console.log('username ${anyobject.name} and prize ${anyobject.price}');
-//     return
-// }
-//  handleobject(user)
 
 let newarray = [200,400, 500, 6000 ]
 
