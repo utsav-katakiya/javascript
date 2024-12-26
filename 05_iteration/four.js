@@ -5,6 +5,12 @@ let MyObject  = {
 }
 
 for (const key in MyObject) {
-   console.log(key  , (MyObject[key]));
+//    console.log(key  , (MyObject[key]));
    
+}
+
+const programing = ["js", "rb ", "py","java", "swift"]
+for (const key in programing) {
+    // console.log(programing[key])
+    
 }
