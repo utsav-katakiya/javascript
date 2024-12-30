@@ -10,15 +10,29 @@
 </body>
 
     <script>
-        const div = document.createElement('div')
+        // const div = document.createElement('div')
+        // console.log(div);
+        // div.className = "main"
+        // div.id = Math.round(Math.random()*10+1)
+        // div.setAttribute("title","genereted title")
+        // div.style.backgroundColor="green"
+        // // div.innerText="utsav katakiya"  
+        // let addtext= document.createTextNode('utsav katakiya') 
+        // div.appendChild(addtext)
+        // document.body.appendChild(div)
+
+
+        let div = document.createElement('div')
         console.log(div);
-        div.className = "main"
-        div.id = Math.round(Math.random()*10+1)
-        div.setAttribute("title","genereted title")
-        div.style.backgroundColor="green"
-        // div.innerText="utsav katakiya"  
-        let addtext= document.createTextNode('utsav katakiya') 
+        div.className= "div"
+        div.id="myid"
+        div.style.backgroundColor = "green"
+        div.style.border="10px"
+        div.style.borderColor="orange"
+        // div.innerText="utsav katakiya"
+        const addtext= document.createTextNode("utsav katakiya")
         div.appendChild(addtext)
         document.body.appendChild(div)
+        
     </script>
 </html>
