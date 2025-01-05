@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body>
+    <h1>hello js user</h1>
+    <button id="stop"> stop</button>
+</body>
+
+<script>
+// _________________________________setTimeout______________________________
+    // setTimeout(function(){
+    //         console.log('utsav');
+            
+    //     },2000)
+
+    // let sayutsav = function(){
+    //         console.log("utsav");
+            
+    //     }
+    //     setTimeout(sayutsav,2000)
+
+//    document.querySelector('h1').innerHTML= "most popular language"
+
+
+
+// let changeH1 = function(){
+//     document.querySelector('h1').innerHTML= "JavaScript practise"
+// }
+
+// setTimeout(changeH1,2000)
+
+
+let changeH1 = function(){
+    document.querySelector('h1').innerHTML= "JavaScript practise"
+}
+
+// setTimeout(changeH1,2000)
+
+let changeTXT = setTimeout(changeH1,2000)
+
+document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(changeTXT)
+    console.log("stopped");
+    
+})
+
+</script>
+</html>
