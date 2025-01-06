@@ -58,3 +58,60 @@ promiseFour.then((user) => {
 
 }).finally( ()=> console.log("the promised is either resolved or rejected")
 )
+
+
+const promisefive = new Promise(function (resolve, reject) {
+    setTimeout(function () {
+        let error = false
+        if (!error) {
+            resolve({ username: "javaScript", pass: "123" })
+        } else {
+            reject("error : js wrong")
+        }
+    }, 1000)
+})
+
+// then ,catch or try ,catch
+async function consumePromiseFive() {
+    try {
+        const responce = await promisefive
+        console.log(responce);
+
+    } catch (error) {
+        console.log(error);
+
+    }
+}
+consumePromiseFive()
+
+
+// ------------------------------fetch
+
+async function geAlltUser() {
+    try {
+        const responce = await fetch('https://jsonplaceholder.typicode.com/users')
+        let data = await responce.json()
+        console.log(data);
+    } catch (error) {
+        console.log("E : ", error);
+
+    }
+
+}
+geAlltUser()
+
+
+// use then , catch
+
+fetch('https://api.github.com/users/hiteshchoudhary')
+    .then((responce) => {
+        return responce.json()
+    })
+    .then((data) => {
+        console.log(data);
+
+    })
+    .catch((error) => {
+        console.log(error);
+
+    })
